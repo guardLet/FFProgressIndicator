@@ -10,6 +10,10 @@
 		DDA793EC1FAA037E007AAD3D /* FFProgressIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA793E21FAA037D007AAD3D /* FFProgressIndicator.framework */; };
 		DDA793F11FAA037E007AAD3D /* FFProgressIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA793F01FAA037E007AAD3D /* FFProgressIndicatorTests.swift */; };
 		DDA793F31FAA037E007AAD3D /* FFProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA793E51FAA037D007AAD3D /* FFProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA794051FAA108B007AAD3D /* FFProgressState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA794011FAA108B007AAD3D /* FFProgressState.swift */; };
+		DDA794061FAA108B007AAD3D /* FFProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA794021FAA108B007AAD3D /* FFProgressBarView.swift */; };
+		DDA794071FAA108B007AAD3D /* FFProgressLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA794031FAA108B007AAD3D /* FFProgressLineView.swift */; };
+		DDA794081FAA108B007AAD3D /* FFProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA794041FAA108B007AAD3D /* FFProgressCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		DDA793EB1FAA037E007AAD3D /* FFProgressIndicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFProgressIndicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA793F01FAA037E007AAD3D /* FFProgressIndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFProgressIndicatorTests.swift; sourceTree = "<group>"; };
 		DDA793F21FAA037E007AAD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA794011FAA108B007AAD3D /* FFProgressState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFProgressState.swift; sourceTree = "<group>"; };
+		DDA794021FAA108B007AAD3D /* FFProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFProgressBarView.swift; sourceTree = "<group>"; };
+		DDA794031FAA108B007AAD3D /* FFProgressLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFProgressLineView.swift; sourceTree = "<group>"; };
+		DDA794041FAA108B007AAD3D /* FFProgressCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFProgressCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		DDA793E41FAA037D007AAD3D /* FFProgressIndicator */ = {
 			isa = PBXGroup;
 			children = (
+				DDA794021FAA108B007AAD3D /* FFProgressBarView.swift */,
+				DDA794041FAA108B007AAD3D /* FFProgressCircleView.swift */,
+				DDA794031FAA108B007AAD3D /* FFProgressLineView.swift */,
+				DDA794011FAA108B007AAD3D /* FFProgressState.swift */,
 				DDA793E51FAA037D007AAD3D /* FFProgressIndicator.h */,
 				DDA793E61FAA037D007AAD3D /* Info.plist */,
 			);
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					DDA793E11FAA037D007AAD3D = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					DDA793EA1FAA037E007AAD3D = {
@@ -196,6 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA794071FAA108B007AAD3D /* FFProgressLineView.swift in Sources */,
+				DDA794051FAA108B007AAD3D /* FFProgressState.swift in Sources */,
+				DDA794061FAA108B007AAD3D /* FFProgressBarView.swift in Sources */,
+				DDA794081FAA108B007AAD3D /* FFProgressCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +351,7 @@
 		DDA793F71FAA037E007AAD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fastfox.FFProgressIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +374,7 @@
 		DDA793F81FAA037E007AAD3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +396,7 @@
 		DDA793FA1FAA037E007AAD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YRGRQQX3S;
 				INFOPLIST_FILE = FFProgressIndicatorTests/Info.plist;
@@ -390,6 +411,7 @@
 		DDA793FB1FAA037E007AAD3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YRGRQQX3S;
 				INFOPLIST_FILE = FFProgressIndicatorTests/Info.plist;
