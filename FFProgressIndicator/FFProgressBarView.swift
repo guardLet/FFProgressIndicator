@@ -108,7 +108,7 @@ public class FFProgressBarView: UIView, FFProgressIndicatorState {
         let lineView = FFProgressLineView(frame: lineFrame)
         lineView.totalSubSections = subSections[index - 1]
         lineView.tag = index * lineTagMultiplier
-        lineView.backgroundColor = UIColor.lightGray
+        lineView.backgroundColor = UIColor(red: 143/255, green: 143/255, blue: 143/255, alpha: 0.4)
         self.addSubview(lineView)
     }
     

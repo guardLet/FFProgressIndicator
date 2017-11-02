@@ -24,7 +24,7 @@ class FFProgressCircleView: UIView, FFProgressCircleState {
         ///Line color when the line is drawn
         var strokeColor: UIColor {
             switch self {
-            case .Initial: return UIColor.lightGray
+            case .Initial: return UIColor(red: 143/255, green: 143/255, blue: 143/255, alpha: 0.4)
             case .Current,.Completed: return UIColor.white
             }
         }

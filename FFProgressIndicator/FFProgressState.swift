@@ -78,7 +78,7 @@ extension FFProgressCircleState where Self: FFProgressCircleView {
     
     ///Border radius of the circle. Defaults to 1
     var outerCircleStrokeWidth: CGFloat {
-        return 1
+        return 1.5
     }
     
     
@@ -96,7 +96,7 @@ extension FFProgressCircleState where Self: FFProgressCircleView {
     
     /// Inner circle point
     var innerCircleDiameterFactor: CGFloat {
-        return  0.70
+        return  0.55
     }
     
     ///Diameter of the inner circle calculated on the basic of outerCircleDiameter and viewWidthFactor
