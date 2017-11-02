@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1C84A11FAB58AF0047BA65 /* FFProgressBarView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDA794021FAA108B007AAD3D /* FFProgressBarView.swift */; };
+		DD1C84A21FAB58BE0047BA65 /* FFProgressCircleView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDA794041FAA108B007AAD3D /* FFProgressCircleView.swift */; };
+		DD1C84A31FAB58BE0047BA65 /* FFProgressLineView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDA794031FAA108B007AAD3D /* FFProgressLineView.swift */; };
+		DD1C84A41FAB58BE0047BA65 /* FFProgressState.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDA794011FAA108B007AAD3D /* FFProgressState.swift */; };
 		DDA793EC1FAA037E007AAD3D /* FFProgressIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA793E21FAA037D007AAD3D /* FFProgressIndicator.framework */; };
 		DDA793F11FAA037E007AAD3D /* FFProgressIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA793F01FAA037E007AAD3D /* FFProgressIndicatorTests.swift */; };
 		DDA793F31FAA037E007AAD3D /* FFProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA793E51FAA037D007AAD3D /* FFProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,6 +110,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA793F31FAA037E007AAD3D /* FFProgressIndicator.h in Headers */,
+				DD1C84A21FAB58BE0047BA65 /* FFProgressCircleView.swift in Headers */,
+				DD1C84A31FAB58BE0047BA65 /* FFProgressLineView.swift in Headers */,
+				DD1C84A41FAB58BE0047BA65 /* FFProgressState.swift in Headers */,
+				DD1C84A11FAB58AF0047BA65 /* FFProgressBarView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
