@@ -58,8 +58,8 @@ public class FFProgressLineView: UIView, FFProgressLineState {
     private func drawLine() {
         
         let path = UIBezierPath()
-        let origin = CGPoint(x: lineWidth * CGFloat(previousSubSection), y: 0 + 0.5)
-        let addLinePoint = CGPoint(x: lineWidth * CGFloat(currentSubSection), y: 0 + 0.5)
+        let origin = CGPoint(x: lineWidth * CGFloat(previousSubSection), y: 0)
+        let addLinePoint = CGPoint(x: lineWidth * CGFloat(currentSubSection), y: origin.y)
         path.move(to: origin)
         path.addLine(to: addLinePoint)
         
@@ -69,6 +69,7 @@ public class FFProgressLineView: UIView, FFProgressLineState {
         shapeLayer.fillColor = UIColor.white.cgColor
         shapeLayer.strokeColor = UIColor.white.cgColor
         shapeLayer.lineWidth = viewHeight
+        shapeLayer.miterLimit = 0.5
         shapeLayer.path = path.cgPath
         
         // animate it
